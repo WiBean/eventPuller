@@ -5,6 +5,7 @@ class CreateWibeanEventV1s < ActiveRecord::Migration
       t.string :data
       t.integer :ttl
       t.datetime :published_at
+      t.string :hexid
       t.belongs_to :core
 
       t.timestamps

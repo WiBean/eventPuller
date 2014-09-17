@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" hash="1523328255">
+    <data-source source="LOCAL" name="Rails epRails: development" uuid="54567efd-9af8-4148-80d9-1c9fe4ed8d8e">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails epRails: production" uuid="78da00e1-fbfd-46a0-a4b2-34bcb7478afb">
+      <driver-ref>mysql</driver-ref>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://mysql.johnmichaelfischer.com/wibean_events</jdbc-url>
+      <user-name>wibean_stats</user-name>
+      <user-password>df9bdf98df99df9edf9fdf9cdf9ddf92df93</user-password>
+      <libraries />
+    </data-source>
+  </component>
+</project>
+

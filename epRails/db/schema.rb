@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20140917105417) do
     t.string   "data"
     t.integer  "ttl"
     t.datetime "published_at"
+    t.string   "hexid"
     t.integer  "core_id"
     t.datetime "created_at"
     t.datetime "updated_at"

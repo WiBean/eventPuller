@@ -21,14 +21,14 @@ EM.run do
     source.message do |name, message|
         jsonMsg = JSON.parse(message)
         puts message
-        puts "event: #{name} data: #{jsonMsg['data']}"
+        #puts "event: #{name} data: #{jsonMsg['data']}"
         #insert into the DB
         coreAsRails = Core.find_or_create_by(hexid: jsonMsg['coreid'])
-        wev = WibeanEventV1.new(:name => jsonMsg['name'], :data => jsonMsg['data'],
+        wev = WibeanEventV1.new(:name => name, :data => jsonMsg['data'],
                           :ttl => jsonMsg['ttl'], :published_at => jsonMsg['published_at'],
-                          :core_id => coreAsRails.id)
+                          :core_id => coreAsRails.id, :hexid => jsonMsg['coreid'])
         success = wev.save
-        puts "wev saved: ${success}"
+        puts "wev saved: #{success}"
     end
     source.open do
         puts "opened: #{source.ready_state}"
