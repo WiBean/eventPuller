@@ -6,10 +6,7 @@ end
 source 'https://rubygems.org'
 
 gem 'eventmachine', '>=1.0.3', :git => 'https://github.com/eventmachine/eventmachine.git'
-
-#gem 'em-eventsource'
 gem 'em-eventsource' , '>=0.2', :git => 'https://github.com/WhiskeyBravo/em-eventsource.git', :branch => 'patch-1'
-
 gem 'em-http-request'
 gem 'multi_json'
 gem 'pry'
