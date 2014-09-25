@@ -25,7 +25,7 @@ production:
   adapter: mysql2
   pool: 5
   timeout: 5000
-  database: 'wibean_events'
-  host: 'mysql.johnmichaelfischer.com'
-  username: 'wibean_stats'
-  password: '123456789'
+  database: wibean_events
+  host: mysql.johnmichaelfischer.com
+  username: wibean_stats
+  password: 123456789
