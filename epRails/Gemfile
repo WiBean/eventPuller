@@ -1,3 +1,7 @@
+if RUBY_VERSION =~ /1.9/
+  Encoding.default_external = Encoding::UTF_8
+  Encoding.default_internal = Encoding::UTF_8
+end
 source 'https://rubygems.org'
 
 
@@ -17,6 +21,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'datagrid'
 #for pagination
 gem 'kaminari'
+#for mysql
+gem 'mysql2'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
