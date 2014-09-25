@@ -10,7 +10,7 @@ class WibeanEventsGrid
   filter(:name, :string)
   filter(:published_at, :date, :range => true)
 
-  column(:hexid)
+  column(:hexid, :mandatory => true)
   column(:name, :mandatory => true)
   column(:data, :mandatory => true)
   #column(:published_at, :mandatory => true) do |pub|
